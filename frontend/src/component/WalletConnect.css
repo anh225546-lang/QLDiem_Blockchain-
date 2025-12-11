@@ -1,0 +1,78 @@
+/* src/components/WalletConnect.css */
+
+.wallet-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Đổ bóng đẹp */
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+}
+
+.card h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.btn-connect {
+  background: linear-gradient(45deg, #f6851b, #e2761b); /* Màu cam MetaMask */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  font-weight: bold;
+  width: 100%; /* Nút full chiều rộng */
+}
+
+.btn-connect:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(246, 133, 27, 0.4);
+}
+
+.info-box {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  text-align: left;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.address {
+  background: #e9ecef;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-family: monospace;
+  color: #333;
+  font-weight: bold;
+}
+
+.status {
+  font-weight: bold;
+  margin-bottom: 15px;
+  display: block;
+  text-align: center;
+}
+
+.status.success { color: #28a745; }
+.status.warning { color: #ffc107; }
+.error-msg { color: #dc3545; margin-top: 15px; font-size: 14px;}
